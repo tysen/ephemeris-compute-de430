@@ -130,15 +130,15 @@ def fetch_required_files(refresh):
     """
     # List of the files we require
     required_files = [
-        {
-            'url': 'https://ftp.lowell.edu/pub/elgb/astorb.dat.gz',
-            'destination': 'data/astorb.dat',
-            'force_refresh': True
-        },
+        # {
+        #     'url': 'https://ftp.lowell.edu/pub/elgb/astorb.dat.gz',
+        #     'destination': 'data/astorb.dat',
+        #     'force_refresh': refresh
+        # },
         {
             'url': 'https://www.minorplanetcenter.net/iau/MPCORB/CometEls.txt',
             'destination': 'data/Soft00Cmt.txt',
-            'force_refresh': True
+            'force_refresh': refresh
         },
         {
             'url': 'https://ssd.jpl.nasa.gov/ftp/eph/planets/ascii/de430/header.430_572',

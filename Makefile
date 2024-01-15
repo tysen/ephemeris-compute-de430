@@ -26,8 +26,8 @@ DATE    = 09/06/2019
 PATHLINK= /
 
 WARNINGS    = -Wall -Wno-format-truncation -Wno-unknown-pragmas
-COMPILE     = $(CC) $(WARNINGS) -g -c -I $(CWD)/src
-LIBS        = -lgsl -lgslcblas -lm
+COMPILE     = $(CC) $(WARNINGS) -g -c -I $(CWD)/src -I /usr/local/include/
+LIBS        = -L /usr/local/lib/ -lgsl -lgslcblas -lm
 LINK        = $(CC) $(WARNINGS) -g -fopenmp
 LINK_SERIAL = $(CC) $(WARNINGS) -g
 
